@@ -1,5 +1,4 @@
 from PyQt5.QtWidgets import *
-
 import random
 
 
@@ -23,6 +22,7 @@ app.setStyleSheet('''
        ''')
 
 
+window.resize(400, 300)
 
 mainline = QVBoxLayout()
 
@@ -35,12 +35,27 @@ firstline = QHBoxLayout()
 haifline = QVBoxLayout()
 firstline.addWidget(menubut)
 haifline.addWidget(restbtn)
+
+firstline.addWidget(menubut)
+firstline.addWidget(restbtn)
 firstline.addWidget(timlb)
 mainline.addLayout(firstline)
 
 
+
 ansbut = QPushButton('скіни')
 mainline.addWidget(ansbut)
+
+
+
+result = QLabel('Результат :')
+
+result.hide()
+
+ansbut = QPushButton('скіни')
+mainline.addWidget(ansbut)
+
+
 mainline.addWidget(redaguvaty)
 
 
