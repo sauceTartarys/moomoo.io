@@ -1,32 +1,20 @@
 from PyQt5.QtWidgets import *
 import random
 
+from main import game
 
 app = QApplication([])
 window = QWidget()
 window.resize(500, 400)
-background_image = ("moomoo-io-1280x720.jpg")
-background_label = QLabel()
-background_label.setStyleSheet(background_image)
 
 
-app = QApplication([])
-
-app.setStyleSheet('''
-           MainWindow {
-               background-color: transparent;
-           }
-           QLabel {
-               background: transparent;
-           }
-       ''')
 
 
 window.resize(400, 300)
 
 mainline = QVBoxLayout()
 
-menubut = QPushButton('меню')
+menubut = QPushButton('Іграти')
 restbtn = QPushButton('настройки')
 timlb = QLabel('ведіть нік')
 redaguvaty = QPushButton('соцмережі розраба')
@@ -58,7 +46,7 @@ mainline.addWidget(ansbut)
 
 mainline.addWidget(redaguvaty)
 
-
+menubut.clicked.connect(game)
 window.setLayout(mainline)
 window.show()
 app.exec()
