@@ -7,6 +7,10 @@ from main import game
 app = QApplication([])
 window = QWidget()
 
+window.resize(700, 500)
+
+
+
 app.setStyleSheet("""
  QPushButton{
     background-image: none;
@@ -17,8 +21,6 @@ app.setStyleSheet("""
     border-radius: 9.5px;
     } 
 """)
-window.resize(700, 500)
-
 
 mainline = QVBoxLayout()
 
@@ -36,12 +38,18 @@ haifline = QVBoxLayout()
 
 mainline.addStretch(1)
 
-
 mainline.addWidget(menubut)
 mainline.addWidget(herfg)
 mainline.addWidget(restbtn)
 
+
 mainline.addStretch(1)
+
+ansbut = QPushButton('скіни')
+mainline.addWidget(ansbut)
+
+
+
 mainline.addWidget(redaguvaty)
 
 menubut.clicked.connect(game)
