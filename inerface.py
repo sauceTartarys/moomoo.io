@@ -26,8 +26,8 @@ firstline.addWidget(timlb)
 mainline.addLayout(firstline)
 
 class cordint():
-    def herf(self):
-        self.menubut.setGeometry((440, 80, 75, 23))
+
+
 
 
 
