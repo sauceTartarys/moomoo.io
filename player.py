@@ -24,9 +24,4 @@ class stive:
         if keys[pygame.K_w]:
             self.hit_box.y -= self.speed
         if keys[pygame.K_s]:
-
             self.hit_box.y += self.speed
-
-            self.hit_box.y += self.speed
-
-
