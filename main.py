@@ -15,7 +15,7 @@ def game():
     fone = pygame.transform.scale(fone,(800,500))
 
     heroplayer = player.stive(50,50, 50,50, 0.5, ("yUrxd7Uv_400x400.jpg"))
-    amps = struktur.stoneblock(100,100,50,50,())
+    amps = struktur.stoneblock(100,100,50,50,)
 
     game = True
 
