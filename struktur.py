@@ -12,6 +12,8 @@ class stoneblock:
 
     def render(self, window):
         window.blit(self.texture, (self.hit_box.x, self.hit_box.y))
+        window.blit(self.texture, (self.hit_box.x, self.hit_box.y))
+
 
 
 
