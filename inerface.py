@@ -1,9 +1,9 @@
-
 from PyQt5.QtWidgets import *
 import random
 
 from main import game
 from merega import profile
+from settings import nastrigs
 
 app = QApplication([])
 window = QWidget()
@@ -54,8 +54,8 @@ mainline.addWidget(ansbut)
 mainline.addWidget(redaguvaty)
 
 menubut.clicked.connect(game)
-
 window.setLayout(mainline)
-restbtn.clicked.connect(profile)
+redaguvaty.clicked.connect(profile)
+restbtn.clicked.connect(nastrigs)
 window.show()
 app.exec()
