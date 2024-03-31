@@ -25,12 +25,12 @@ app.setStyleSheet("""
 
 mainline = QVBoxLayout()
 
-menubut = QPushButton('Іграти')
-restbtn = QPushButton('настройки')
+menubut = QPushButton('Грати')
+restbtn = QPushButton('Настройки')
 
-redaguvaty = QPushButton('соцмережі розраба')
+redaguvaty = QPushButton('Соцмережі розробника')
 herfg = QLineEdit()
-herfg.setPlaceholderText("ведіть нік")
+herfg.setPlaceholderText("Введіть нік")
 
 
 

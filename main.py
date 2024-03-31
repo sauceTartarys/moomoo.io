@@ -1,25 +1,27 @@
 import pygame
+from PyQt5.QtWidgets import *
 import player
 import struktur
 import struktur2
 
 
 def game():
-    pygame.init()
 
+    pygame.init()
     font = pygame.font.Font(None, 36)
     window = pygame.display.set_mode((800,500))
     fps = pygame.time.Clock()
 
 
-    fone = pygame.image.load("moomoo-io-1280x720.jpg")
+    fone = pygame.image.load("depositphotos_206763476-stock-photo-green-grass-texture-background.webp")
 
     fone = pygame.transform.scale(fone,(800,500))
     score = 0
-    heroplayer = player.stive(350,50, 100,100, 1, "yUrxd7Uv_400x400.jpg")
-    asp = struktur.stoneblock(350,350,150,150, "488-4884792_moomoo-io-wiki-moomoo-io-wiki-sapling-hd.png")
-    asp2 = struktur2.stoneblock2(50,150,150,150, "560-5606073_moomoo-io-wiki-wood-hd-png-download.png")
+    heroplayer = player.stive(350,50, 100,100, 1, "1711834846381152.png")
+    asp = struktur.stoneblock(350,350,150,150, "171183458479330.png")
+    asp2 = struktur2.stoneblock2(50,150,150,150, "1711834438564893.png")
     game = True
+
 
 
     while game:
