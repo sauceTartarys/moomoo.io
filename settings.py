@@ -1,25 +1,32 @@
-import PyQt5.QtWidgets
-import pygame
 
+from PyQt5.QtWidgets import *
 
 def nastrigs():
-    pygame.init()
-
-    window = pygame.display.set_mode((800, 500))
-    fps = pygame.time.Clock()
-    game = True
 
 
+    window = QDialog()
 
-    while game:
+    mainline = QVBoxLayout()
 
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                game = False
-                pygame.quit()
+    questbl = QLabel("Звук :")
+
+    spnbox = QSpinBox()
+
+    h1 = QHBoxLayout()
+    h1.addWidget(questbl)
+    h1.addWidget(spnbox)
+    mainline.addLayout(h1)
 
 
 
-    window.fill((123,123,123))
-    pygame.display.flip()
-    fps.tick()
+    donebut = QPushButton('готово')
+    mainline.addWidget(donebut)
+
+
+
+
+
+    window.setLayout(mainline)
+
+    window.show()
+    window.exec()
